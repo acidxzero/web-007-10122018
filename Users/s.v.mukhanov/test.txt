@@ -1,1 +1,58 @@
+<html>
+<body>
+<head>First Steps</head>
+<script>
 
+var n = 100;
+var s01 = n + " bottles of beer in the fridge."
+
+
+var s02 = n + "";
+
+var s03 = String(n);
+
+
+var s04 = n.toString();
+
+s05 = n.toString(2);
+
+document.write("<br>1. " + s01 + "; " + s02 + "; " + s03 + "; " + s04 + "; " + s05);
+
+var l = 123456.789;
+var t01 = l.toFixed();
+var t02 = l.toFixed(2);
+var t03 = l.toExponential(1);
+var t04 = l.toExponential(3);
+var t05 = l.toFixed(1);
+document.write("<br>2. " + t01 + "; " + t02 + "; " + t03 + "; " + t04 + "; " + t05);
+
+var product = "21" * "2";
+document.write("<br>3. " + typeof(product) + "; " + product);
+var s_val = "1";
+var num = s_val - 0;
+document.write("<br>" + num + "; " + typeof(num));
+document.write("<br>" + "parseInt(\"3 blind mice\") -- " + parseInt("3 blind mice"));
+document.write("<br>" + "parseFloat(\"3.14 meters\") -- " + parseFloat("3.14 meters"));
+document.write("<br>" + "parseInt(\"12.34\") -- " + parseInt("12.34"));
+document.write("<br>" + "parseInt(\"0xFF\") -- " + parseInt("0xFF"));
+document.write("<br>" + "parseInt(\"11\", 2) -- " + parseInt("11", 2));
+document.write("<br>" + "parseInt(\"ff\", 16) -- " + parseInt("ff", 16));
+document.write("<br>" + "parseInt(\"zz\", 36) -- " + parseInt("zz", 36));
+document.write("<br>" + "parseInt(\"077\", 8) -- " + parseInt("077", 8));
+document.write("<br>" + "parseInt(\"077\", 10) -- " + parseInt("077", 10));
+document.write("<br>" + "parseInt(\"eleven\") - " + parseInt("eleven"));
+document.write("<br>" + "parseFloat(\"$72.47\") - " + parseFloat("$72.47"));
+
+
+var x1;
+var x2 = null;
+var x3 = "aaa";
+var x4 = 7;
+var x5 = 0;
+var x6 = 1/0;
+
+document.write("<br>4. " + Boolean(x1) + "; " + Boolean(x2) + "; " + Boolean(x3) + "; " + Boolean(x4) + "; " + Boolean(x5) + "; " + Boolean(x6));
+
+</script>
+</body>
+</html>
