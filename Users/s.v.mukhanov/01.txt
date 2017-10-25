@@ -51,7 +51,35 @@ var x4 = 7;
 var x5 = 0;
 var x6 = 1/0;
 
-document.write("<br>4. " + Boolean(x1) + "; " + Boolean(x2) + "; " + Boolean(x3) + "; " + Boolean(x4) + "; " + Boolean(x5) + "; " + Boolean(x6));
+document.write("<br>" + Boolean(x1) + "; " + Boolean(x2) + "; " + Boolean(x3) + "; " + Boolean(x4) + "; " + Boolean(x5) + "; " + Boolean(x6));
+
+var x = 1;
+var y = x;
+function add_to_total(total, z)
+{
+total = total + z;
+}
+add_to_total(x, y);
+
+document.write("<br>4. m и n никак не изменились с момента определения.")
+
+var xmas = new Date(2007, 11, 25);
+var solstice = xmas;
+solstice.setDate(21);
+
+document.write("<br>5. " + xmas.getDate( ));
+
+
+xmas.getDate( );
+xmas == solstice
+document.write("<br>" + xmas);
+
+
+var xmas = new Date(2007, 11, 25);
+var solstice_plus_4 = new Date(2007, 11, 25);
+xmas != solstice_plus_4
+
+document.write("<br>" + xmas);
 
 </script>
 </body>
